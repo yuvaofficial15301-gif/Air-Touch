@@ -1,0 +1,20 @@
+# Air Touch runtime dependencies (single source of truth).
+# Used by bootstrap/install_runtime.py, `pip install -r requirements.txt`
+# and (via pyproject.toml) `pip install -e .`
+#
+# MediaPipe MUST stay at 0.10.14 while the engine uses the legacy
+# `mediapipe.solutions.hands` API (removed in newer MediaPipe releases).
+mediapipe==0.10.14
+
+# MediaPipe 0.10.14 depends on opencv-contrib-python; declaring it here (instead
+# of opencv-python) avoids two packages fighting over the same `cv2` module.
+# 0.10.14 is a NumPy 1.x build, so NumPy 2 is excluded.
+opencv-contrib-python>=4.8,<4.12
+numpy>=1.24,<2
+
+# Desktop input adapter (Windows / Linux X11 / macOS)
+PyAutoGUI>=0.9.54,<1
+
+# Local developer console
+fastapi>=0.115,<1
+uvicorn>=0.30,<1

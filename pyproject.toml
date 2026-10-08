@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "air-touch"
+dynamic = ["version", "dependencies"]
+description = "Advanced offline hand-gesture control framework"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+license = {file = "LICENSE"}
+authors = [{name = "Yuvaraj N. (Yuva)"}]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "httpx>=0.27"]
+
+[project.scripts]
+airtouch = "airtouch.cli:main"
+
+[tool.setuptools.dynamic]
+version = {attr = "airtouch.__version__"}
+dependencies = {file = ["requirements.txt"]}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+airtouch = ["ui/*.html"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "bootstrap"]

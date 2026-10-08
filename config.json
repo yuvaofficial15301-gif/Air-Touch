@@ -1,0 +1,64 @@
+{
+  "camera": {
+    "index": 0,
+    "width": 1280,
+    "height": 720,
+    "mirror": true,
+    "auto_fallback": true
+  },
+  "tracking": {
+    "max_hands": 2,
+    "min_detection_confidence": 0.55,
+    "min_tracking_confidence": 0.55,
+    "model_complexity": 1,
+    "gesture_debounce_ms": 280
+  },
+  "cursor": {
+    "enabled": true,
+    "hand": "right",
+    "smoothing": 0.35,
+    "edge_margin": 0.06,
+    "move_when": [
+      "open_palm",
+      "index_pointing",
+      "two_finger"
+    ]
+  },
+  "mouse": {
+    "enabled": true,
+    "drag_enabled": true,
+    "scroll_amount": 7
+  },
+  "hands": {
+    "left": {
+      "enabled": true
+    },
+    "right": {
+      "enabled": true
+    }
+  },
+  "gestures": {
+    "right": {
+      "index_pinch": "left_click",
+      "middle_pinch": "right_click",
+      "two_finger": "scroll",
+      "fist": "drag",
+      "open_palm": "release",
+      "thumbs_up": "play_pause"
+    },
+    "left": {
+      "index_pinch": "left_click",
+      "middle_pinch": "right_click",
+      "two_finger": "scroll",
+      "fist": "drag",
+      "open_palm": "release",
+      "thumbs_up": "play_pause"
+    },
+    "two_hand": {
+      "both_open": "none",
+      "both_fist": "none",
+      "hands_together": "none",
+      "both_pinch": "none"
+    }
+  }
+}
