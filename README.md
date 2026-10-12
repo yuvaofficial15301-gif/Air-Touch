@@ -171,13 +171,6 @@ Grant **Camera** and **Accessibility** permission to your terminal app when macO
 5. `airtouch.doctor` prints every check and ends with `AIR TOUCH RUNTIME READY`.
 6. Air Touch starts: camera window + developer console.
 
-If any step fails the launcher prints `INSTALLATION FAILED`, the reason, and **does not start Air Touch**.
-
-## Subsequent Runs
-
-The launcher reuses `.venv`, runs the doctor (a few seconds) and starts. Packages are reinstalled **only** if the environment is damaged, a pin is wrong (e.g. wrong MediaPipe) or `requirements.txt` changed after a `git pull`. A copied/broken `.venv` (different machine, removed base Python) is detected and rebuilt automatically.
-
-## Installation Internals
 
 `START_AIR_TOUCH.bat` / `.sh` are thin; the logic lives in `bootstrap/install_runtime.py` (standard library only, tested on Linux).
 
