@@ -8,7 +8,6 @@ Created and maintained by **Yuvaraj N. (Yuva)** · MIT License
 
 ## Table of contents
 
-[Overview](#overview) · [Features](#features) · [Architecture](#architecture) · [Supported Platforms](#supported-platforms) · [Requirements](#requirements) · [Quick Start](#quick-start) · [Windows](#windows-installation) · [Linux](#linux-installation) · [macOS](#macos-installation) · [Android](#android-status) · [First Run](#first-run) · [Subsequent Runs](#subsequent-runs) · [Installation Internals](#installation-internals) · [Python Environment](#python-environment) · [Dependencies](#dependencies) · [MediaPipe](#mediapipe-compatibility) · [Camera](#camera-setup) · [Gestures](#gesture-controls) · [Configuration](#configuration) · [Runtime Modes](#runtime-modes) · [Update](#update) · [Troubleshooting](#troubleshooting) · [Clean Reinstall](#clean-reinstallation) · [Developer Integration](#developer-integration) · [Custom Adapters](#custom-platform-adapters) · [Project Structure](#project-structure) · [Development](#development-setup) · [Testing](#testing) · [Security / Privacy](#security--privacy) · [Permissions](#permissions) · [Support Matrix](#platform-support-matrix) · [FAQ](#faq) · [License](#license) · [Credits](#credits)
 
 ---
 
